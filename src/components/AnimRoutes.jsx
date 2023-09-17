@@ -1,5 +1,5 @@
 import React from 'react';
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, Outlet } from 'react-router-dom';
 import Root from '../pages/Root';
 import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
@@ -9,17 +9,20 @@ import About from '../pages/About';
 const AnimRoutes = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Root />}>
+      <Route exact path="/" element={<Root />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="portfolo" element={<Portfolio />} />
+        <Route exact path="about" element={<About />} />
+        <Route exact path="contact" element={<Contact />} />
+        <Route exact path="portfolio" element={<Portfolio />} />
       </Route>
     )
   )
   return (
     <>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} >
+        <Outlet />
+      </RouterProvider>
+
     </>
   );
 }
