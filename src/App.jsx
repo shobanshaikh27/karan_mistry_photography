@@ -10,23 +10,10 @@ import AnimRoutes from './components/AnimRoutes'
 import Header from './components/Header'
 
 function App() {
-  // const router = createBrowserRouter(
-  //   createRoutesFromElements(
-  //     <Route path="/" element={<Root />}>
-  //       <Route index element={<Home />} />
-  //       <Route path="/about" element={<About />} />
-  //       <Route path="/contact" element={<Contact />} />
-  //       <Route path="/portfolo" element={<Portfolio />} />
-  //     </Route>
-  //   )
-  // )
+
 
   return (
     <>
-      {/* <h1>app</h1>
-      <RouterProvider router={router} >
-        <Outlet />
-      </RouterProvider> */}
       <Header />
       <AnimRoutes />
     </>
