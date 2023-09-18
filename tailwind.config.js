@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: 'Playfair Display',
-      secondary: 'Mulish',
+      secondary: 'Inherit',
     },
     screens: {
       sm: '640px',
