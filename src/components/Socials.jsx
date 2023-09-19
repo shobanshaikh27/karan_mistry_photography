@@ -8,7 +8,7 @@ import {
   } from 'react-icons/im' ;
 const Socials = () => {
   return (
-    <div className='hidden xl:flex ml-24'>
+    <div className='hidden xl:flex ml-24 '>
     <ul className='flex gap-x-4'>
       <li><a href='/' target='_blank'><ImFacebook /></a></li>
       <li><a href='/' target='_blank'><ImTwitter /></a></li>

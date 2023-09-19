@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
-      <header className=' fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center '>
+      {/* <header className='fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center '> */}
+      <header className=" sticky w-full px-[30px] lg:px-[100px] z-30 flex items-center pt-2 pb-2 ">
         <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
           <Link to='/' className=' max-w-[200px] '>
             <img src={Logo} alt="logo" />

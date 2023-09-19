@@ -10,10 +10,12 @@ import { motion } from 'framer-motion'
 
 const menuVariants = {
   hidden: {
-    x: '100%'
+    x: '100%',
+    display: "none"
   },
   show: {
     x: 0,
+    display : "block",
     transition: {
       ease: [0.6, 0.01, -0.05, 0.9],
     }
@@ -24,7 +26,7 @@ const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false)
   return (
     <>
-      <nav className='text-primary xl:hidden'>
+      <nav className='text-primary xl:hidden overflow-x-hidden '>
         <div className='text-3xl cursor-pointer ' onClick={()=> setOpenMenu(true)}>
           <CgMenuRight />
         </div>
