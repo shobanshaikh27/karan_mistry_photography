@@ -41,25 +41,25 @@ const MobileNav = () => {
           <ul className='h-full flex flex-col items-center justify-center gap-y-8 text-primary font-primary font-bold text-3xl '>
             <li>
               <Link to={'/'}
-                className='text-[#696c6d] hover:text-primary transition'>
+                className='text-[#696c6d] hover:text-primary transition'  onClick={()=> setOpenMenu(false)} >
                 Home
               </Link>
             </li>
             <li>
               <Link to={'about'}
-                className='text-[#696c6d] hover:text-primary transition'>
+                className='text-[#696c6d] hover:text-primary transition'  onClick={()=> setOpenMenu(false)}>
                 About
               </Link>
             </li>
             <li>
               <Link to={'portfolio'}
-                className='text-[#696c6d] hover:text-primary transition'>
+                className='text-[#696c6d] hover:text-primary transition'  onClick={()=> setOpenMenu(false)}>
                 Portfolio
               </Link>
             </li>
             <li>
               <Link to={'contact'}
-                className='text-[#696c6d] hover:text-primary transition'>
+                className='text-[#696c6d] hover:text-primary transition'  onClick={()=> setOpenMenu(false)}>
                 Contact
               </Link>
             </li>
