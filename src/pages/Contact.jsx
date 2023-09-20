@@ -16,7 +16,7 @@ const Contact = () => {
             <form action="" className='flex-col flex gap-y-4'>
               <div className='flex gap-x-10'>
                 <input type="text" placeholder='Your Name' name="" id="" className='outline-none border-b border-b-primary h-[60px] bg-transparent  font-secondary w-full pl-3 placeholder: text-[#757879] ' required />
-                <input type="number" placeholder='Your Mobile Number' name="" id="" className='outline-none border-b border-b-primary h-[60px] bg-transparent  font-secondary w-full pl-3 placeholder: text-[#757879] ' required />
+                <input type="number" placeholder='Mobile Number' name="" id="" className='outline-none border-b border-b-primary h-[60px] bg-transparent  font-secondary w-full pl-3 placeholder: text-[#757879] ' required />
               </div>
               <input type="email" placeholder='Your Email Address' name="" id="" className='outline-none border-b border-b-primary h-[60px] bg-transparent  font-secondary w-full pl-3 placeholder: text-[#757879] ' required />
               <input type="email" placeholder='Your Message' name="" id="" className='outline-none border-b border-b-primary h-[60px] bg-transparent  font-secondary w-full pl-3 placeholder: text-[#757879] ' />
