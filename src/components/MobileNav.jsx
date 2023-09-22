@@ -25,8 +25,9 @@ const menuVariants = {
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false)
   const handleClick = () =>{
+    const body = document.body;
     setOpenMenu(true);
-    document.body.classList.toggle('overflow-hidden')
+    body.classList.toggle("overflow-hidden");
   }
   return (
     <>
