@@ -7,7 +7,7 @@ const Contact = () => {
     <section className='section'>
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row h-full items-center justify-start pt-36 gap-x-8 text-center lg:text-left ">
-        <div cLassName='hidden lg:flex absolute bottom-e left-0 right-0 top-72 -z-10 bg-[#eef7f9]'> 
+        <div className='hidden lg:flex absolute bottom-e left-0 right-0 top-72 -z-10 bg-[#eef7f9]'> 
 
 </div>
           <div className='lg:flex-1 lg:pt-[1px] px-4'>

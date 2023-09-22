@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-primary font-secondary min-h-[100vh]; 
+    @apply text-primary font-secondary min-h-[100vh] overflow-x-hidden; 
   }
   
   .section {

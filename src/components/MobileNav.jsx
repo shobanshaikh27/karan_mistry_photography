@@ -24,10 +24,14 @@ const menuVariants = {
 
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false)
+  const handleClick = () =>{
+    setOpenMenu(true);
+    document.body.classList.toggle('overflow-hidden')
+  }
   return (
     <>
-      <nav className='text-primary xl:hidden overflow-x-hidden '>
-        <div className='text-3xl cursor-pointer ' onClick={()=> setOpenMenu(true)}>
+      <nav className='text-primary xl:hidden overflow-x-hidden'>
+        <div className='text-3xl cursor-pointer ' onClick={handleClick}>
           <CgMenuRight />
         </div>
         <motion.div

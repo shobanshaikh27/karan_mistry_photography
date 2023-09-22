@@ -27,7 +27,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-      <FlipCardList />
+          <div>
+            <FlipCardList />
+          </div>
         </div>
       </section>
     </div>
