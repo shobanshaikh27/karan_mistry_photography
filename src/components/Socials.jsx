@@ -1,20 +1,15 @@
 import React from 'react'
-import {
-  ImFacebook,
-  ImTwitter,
-  ImPinterest,
-  ImInstagram,
-  ImYoutube,
-  } from 'react-icons/im' ;
+import { AiFillYoutube,AiOutlineTwitter, AiFillInstagram} from 'react-icons/ai' ;
+import { RiPinterestFill,RiFacebookFill } from 'react-icons/ri';
 const Socials = () => {
   return (
-    <div className='hidden xl:flex ml-24 '>
-    <ul className='flex gap-x-4'>
-      <li><a href='/' target='_blank'><ImFacebook /></a></li>
-      <li><a href='/' target='_blank'><ImTwitter /></a></li>
-      <li><a href='/' target='_blank'><ImPinterest /></a></li>
-      <li><a href='/' target='_blank'><ImInstagram /></a></li>
-      <li><a href='/' target='_blank'><ImYoutube /></a></li>
+    <div className='hidden xl:flex ml-12 '>
+    <ul className='flex gap-x-4 '>
+      <li><a href='/' target='_blank'><RiFacebookFill className='text-xl' /></a></li>
+      <li><a href='/' target='_blank'><AiOutlineTwitter className='text-xl' /></a></li>
+      <li><a href='/' target='_blank'><AiFillYoutube className='text-xl' /></a></li>
+      <li><a href='/' target='_blank'><RiPinterestFill className='text-xl' /></a></li>
+      <li><a href='/' target='_blank'><AiFillInstagram  className='text-xl' /></a></li>
     </ul>
   </div>
   )

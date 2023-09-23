@@ -81,7 +81,6 @@ const Header = () => {
                     <Link to="/">
                         <div className='flex gap-2 items-center justify-center'>
                             <img src={Logo} alt="Logo" className='z-[999] max-w-[200px]' />
-                            {/* <span className='text-lg text-gray-800 font-primary font-medium max-sm:hidden'>SS Collection</span> */}
                         </div>
                     </Link>
                     {!isMobile && <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden  '>
