@@ -33,4 +33,10 @@ export const flipimgs = [
       pack: "Wedding photo shoot",
       description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas in quam hic nobis quisquam quas. "
     },
+    {
+      id: "06",
+      photo: womanImg2,
+      pack: "Wedding photo shoot",
+      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas in quam hic nobis quisquam quas. "
+    },
   ];

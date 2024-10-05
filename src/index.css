@@ -15,6 +15,17 @@
   }
   
   .btn {
-    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white;
+    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-[#5b3d1b] text-white;
+  }
+
+  .container{
+    @apply max-w-full w-[1440px] px-5 mx-auto;
+}
+ .border{
+  @apply rounded-tr-full rounded-tl-full rounded-br-xl rounded-bl-xl
+ }
+  :root {
+
+    --radius: 0.5rem
   }
 }

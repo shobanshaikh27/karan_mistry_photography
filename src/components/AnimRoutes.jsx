@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Portfolio from '../pages/Portfolio';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
+import AddGalleryImageForm from '../pages/AddGalleryImageForm';
 
 const AnimRoutes = () => {
   const router = createBrowserRouter(
@@ -14,6 +15,7 @@ const AnimRoutes = () => {
         <Route exact path="about" element={<About />} />
         <Route exact path="contact" element={<Contact />} />
         <Route exact path="portfolio" element={<Portfolio />} />
+        <Route exact path="add-img" element={<AddGalleryImageForm />} />
       </Route>
     )
   )

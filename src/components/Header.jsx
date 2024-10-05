@@ -41,19 +41,19 @@
 
 // export default Header;
 import { useRef, useState, useEffect } from 'react';
-import Logo from '../img/header/logo.svg'
+import Logo from '../img/header/logo.png';
 import { IoMdClose } from 'react-icons/io'
 import { CgMenuRight } from 'react-icons/cg'
 import Socials from './Socials';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const navLinks =[
-    { to: "/", label: "Home" },
-    { to: "about", label: "About Us" },
-    { to: "portfolio", label: "Portfolio" },
-    { to: "contact", label: "Contact Us" },
-  ]
+    const navLinks = [
+        { to: "/", label: "Home" },
+        { to: "about", label: "About Us" },
+        { to: "portfolio", label: "Portfolio" },
+        { to: "contact", label: "Contact Us" },
+    ]
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const linksRef = useRef(null)
@@ -76,11 +76,11 @@ const Header = () => {
     }, [])
     return (
         (
-            <header className=' sticky sm:px-16 px-8 py-4  z-[999] w-full'>
+            <header className=' sticky sm:px-12 px-6 py-2  z-[999] w-full'>
                 <nav className='flex justify-between items-center max-container'>
                     <Link to="/">
                         <div className='flex gap-2 items-center justify-center'>
-                            <img src={Logo} alt="Logo" className='z-[999] max-w-[200px]' />
+                            <img src={Logo} alt="Logo" className='z-[999] max-sm:max-w-[75px] max-w-[100px]' />
                         </div>
                     </Link>
                     {!isMobile && <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden  '>
@@ -91,22 +91,23 @@ const Header = () => {
                         ))}
                     </ul>}
                     {isMobile && <ul className='absolute flex-1 justify-center items-center gap-8 flex-col bg-white w-full min-h-screen top-0 left-0 hidden' ref={linksRef}>
-                       
+
                         {navLinks.map((item) => (
                             <li key={item.label} className='relative navLinks '>
                                 <Link to={item.to} className='font-primary leading-normal text-lg text-[#696c6d] hover:text-primary transition' onClick={toggleMenu}>{item.label}</Link>
                             </li>
                         ))}
-                    </ul>}
-                
-                <Socials />
-                    <div className=' text-4xl hidden max-lg:block z-10 cursor-pointer'>
+                    </ul>
+                    }
+
+                    <Socials />
+                    <div className=' text-4xl xl:hidden lg:block z-10 cursor-pointer'>
                         {isMenuOpen ? (
-                           
+
                             <IoMdClose onClick={toggleMenu} />
                         ) : (
 
-                            <CgMenuRight  onClick={toggleMenu}/>
+                            <CgMenuRight onClick={toggleMenu} />
                         )}
                     </div>
                 </nav>
