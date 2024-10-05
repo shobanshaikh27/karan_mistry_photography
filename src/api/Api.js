@@ -1,1 +1,1 @@
-export const API_URL = 'http://localhost:8500/api'
+export const API_URL = 'https://hom-backend.onrender.com/api'

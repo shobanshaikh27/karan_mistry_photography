@@ -1,4 +1,4 @@
-import { AiFillYoutube,AiOutlineTwitter, AiFillInstagram} from 'react-icons/ai' ;
+import { AiFillYoutube, AiFillInstagram} from 'react-icons/ai' ;
 import { RiWhatsappFill,RiFacebookFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
@@ -22,10 +22,9 @@ export default function Footer() {
           </div>
           <div>
             <Link to='/contact'><h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3></Link>
-            <p>B-57, First floor, Signature Galleria</p>
-            <p>Mahavir Turning, Ankleshwar, Gujarat-393001</p>
-            <p>Phone: (+91) 88669 82592</p>
-            <p>Email: mistrykaran63@gmail.com</p>
+            <p>Email: <Link to="mailto:houseofmemories.enquiry@gmail.com" className="text-slate-300">houseofmemories.enquiry@gmail.com</Link></p>
+          <p>Phone: <Link to="tel:+91 886698 2592" className="text-slate-300">+91 88669 82592</Link></p>
+          <p>Address: <Link to="https://www.google.com/maps/place/House+of+Memories+%2F+Mommies+and+Babies+Photography/@21.6324543,73.0033521,17z/data=!3m1!4b1!4m6!3m5!1s0x3be026ada3779997:0xe34eecd9ee1220cc!8m2!3d21.6324543!4d73.005927!16s%2Fg%2F11dxcvbvyg?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" className="text-slate-300">B-57, First floor, Signature Galleria,Mahavir Turning, Ankleshwar, Gujarat-393001</Link></p>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center">
