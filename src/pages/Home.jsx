@@ -28,7 +28,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12 font-bold text-center mt-6 '>Some Precious Memories</p>
+          <p className='text-[26px] lg:text-[36px] font-primary text-[#5b3d1b] mb-4 lg:mb-12 font-bold text-center mt-6 '>Some Precious Memories</p>
           <div className='container mb-6'>
             <FlipCardList />
           </div>

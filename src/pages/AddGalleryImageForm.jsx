@@ -4,13 +4,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useDropzone } from 'react-dropzone';
 import axios from "axios";
-import { Button } from "../components/ui/button";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../components/ui/form";
-import { Input } from "../components/ui/input";
-import { Separator } from "../components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
 import { ImagePlus, Plus, X } from "lucide-react";
 import { API_URL } from "../api/Api";
-
+import { useToast } from "@/hooks/use-toast";
+import { Toaster } from "@/components/ui/toaster";
 
 const formSchema = z.object({
     title: z.string().min(2).max(100),
@@ -21,6 +22,7 @@ const formSchema = z.object({
 
 const AddGalleryImageForm = () => {
     const [preview, setPreview] = useState("");
+    const { toast } = useToast();
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -55,7 +57,7 @@ const AddGalleryImageForm = () => {
     const { getRootProps, getInputProps, isDragActive, fileRejections } = useDropzone({
         onDrop,
         maxFiles: 1,
-        maxSize: 10000000,
+        maxSize: 50000000,
         accept: { "image/png": [], "image/jpg": [], "image/jpeg": [] },
     });
 
@@ -76,12 +78,20 @@ const AddGalleryImageForm = () => {
             });
 
             console.log("Gallery image added:", response.data);
-            // Reset form or show success message
+            toast({
+                title: "Success",
+                description: "Gallery image added successfully!",
+                variant: "default",
+            });
             form.reset();
             setPreview("");
         } catch (error) {
             console.error("Error adding gallery image:", error);
-            // Show error message to user
+            toast({
+                title: "Error",
+                description: "Failed to add gallery image. Please try again.",
+                variant: "destructive",
+            });
         }
     }
 
@@ -187,6 +197,7 @@ const AddGalleryImageForm = () => {
                     <Button type="submit" className="w-full">Add Gallery Image</Button>
                 </form>
             </Form>
+            <Toaster />
         </div>
     );
 };
