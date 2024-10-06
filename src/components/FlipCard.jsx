@@ -1,7 +1,7 @@
 const FlipCard = ({ image }) => {
   return (
     <div>
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col items-center justify-center">
         <div className="group h-80 w-80 [perspective:1000px]">
           <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div className="absolute inset-0">
