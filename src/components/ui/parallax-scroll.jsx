@@ -30,7 +30,7 @@ export const ParallaxScroll = ({ images, className }) => {
       }}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-7xl mx-auto gap-10 py-12 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start max-w-7xl mx-auto gap-10 py-12 px-10 max-sm:px-4 max-sm:py-8"
       >
         <div className="grid gap-10">
           {firstPart.map((el, idx) => (
