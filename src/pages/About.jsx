@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from '../img/about/karan1.jpg';
-import portfolio from './Portfolio';
+import image from '../img/about/karan.jpg';
+// import portfolio from './Portfolio';
 
 const About = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from '../img/home/Atharv.jpg'
+import image from '../img/home/wedding.jpg'
 import FlipCardList from '../components/FlipCardList';
 import Footer from '../components/Footer';
 
@@ -16,7 +16,7 @@ const Home = () => {
           <div className='flex flex-col justify-center container'>
 
             <div className='w-full mt-24 lg:mt-0 lg:mb-0 lg:w-auto z-10 flex lg:absolute lg:top-24 flex-col justify-center items-center lg:items-start '>
-              <h1 className='h1 max-lg:bg-white'> Photographer <br /> & film Maker</h1>
+              <h1 className='h1 max-lg:bg-white'> Photography <br /> & film Making</h1>
               <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12 '>Gujarat,India</p>
               <Link to={"portfolio"} className='btn mb-[30px] '>visit Gallery</Link>
               <Link to={"contact"} className='btn mb-[30px] '>Hire Me</Link>
@@ -28,7 +28,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <p className='text-[26px] lg:text-[36px] font-primary text-[#5b3d1b] mb-4 lg:mb-12 font-bold text-center mt-6 '>Some Precious Memories</p>
+          <p className='text-[26px] lg:text-[36px] font-primary text-[#5b3d1b] h2 mb-4 lg:mb-12 font-bold text-center mt-6 '>Some Precious Memories</p>
           <div className='container mb-6'>
             <FlipCardList />
           </div>
