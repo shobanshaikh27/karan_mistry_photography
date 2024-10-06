@@ -97,7 +97,7 @@ const Header = () => {
                             <li key={item.label} className='relative navLinks'>
                                 <Link 
                                     to={item.to} 
-                                    className={`font-primary leading-normal text-lg font-medium hoverLine hover:text-primary transition ${isActive(item.to)}`}
+                                    className={`font-primary leading-normal text-xl font-medium hoverLine hover:text-primary transition ${isActive(item.to)}`}
                                 >
                                     {item.label}
                                 </Link>
@@ -111,7 +111,7 @@ const Header = () => {
                             <li key={item.label} className='relative navLinks'>
                                 <Link 
                                     to={item.to} 
-                                    className={`font-primary leading-normal text-lg hover:text-primary transition ${isActive(item.to)}`} 
+                                    className={`font-primary leading-normal text-xl hover:text-primary transition ${isActive(item.to)}`} 
                                     onClick={toggleMenu}
                                 >
                                     {item.label}
